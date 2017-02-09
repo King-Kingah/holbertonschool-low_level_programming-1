@@ -1,56 +1,125 @@
-# Project 0x00. C - Hello, World
+# 0x01. C - variables, if, else, while
 ## Description
-This project is an introduction to the C Programming language.
+At the end of this project we are expected to be able to explain to anyone, without the help of Google:
+- What are the arithmetic operators and how to use them
+- What are the logical operators (sometimes called boolean operators) and how to use them
+- What the the relational operators and how to use them
+- What values are considered TRUE and FALSE in C
+- What are the boolean operators and how to use them
+- How to use the if, if ... else statements
+- How to use comments
+- How to declare variables of types char, int, unsigned int
+- How to affect values to variables
+- How to print the values of variables of type char, int, unsigned int with printf
+- How to use the while loop
+- How to use variables with the while loop
+- How to print variables using printf
+- What is the ASCII character set
+- What are the purpose of the gcc flags -m32 and -m64
+ 
+### Tasks
+####0. Positive anything is better than negative nothing
 
-## Tasks
-####0. Preprocessor
+This program will affect a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative.
 
-Write a script that runs a C file through the preprocessor and save the result into another file.
+- The variable n will store a different value every time you will run this program
+- You don't have to understand what rand, srand, RAND_MAX do. Please do not touch this code
+- The output of the program should be:
+ - The number, followed by
+  - if the number is greater than 0: is positive
+  - if the number is 0: is zero
+  - if the number is less than 0: is negative
+ - followed by a new line
 
-- The C file name will be saved in the variable `$CFILE`
-- The output should be saved in the file c
+1. The last digit
 
-####1. Compiler
+This program will affect a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n.
 
-Write a script that generates the assembly code of a C code and save it in an output file.
+- The variable n will store a different value every time you will run this program
+- You don't have to understand what are and what do rand, srand, RAND_MAX do. Please do not touch this code
+- The output of the program should be:
+ - The string Last digit of, followed by
+ - n, followed by
+ - the string is, followed by
+  - if n is greater than 5: the string and is greater than 5
+  - if n is 0: the string and is 0
+  - if n is less than 6 and not 0: the string and is less than 6 and not 0
+ - followed by a new line
 
-- The C file name will be saved in the variable `$CFILE`
-- The output file should be named the same as the C file, but with the extension .s instead of .c.
-  - Example: if the C file is main.c, the output file should be main.s
+####2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 
-####2. Assembler
+Write a program that prints the alphabet, in lowercase, followed by a new line.
 
-Write a script that compiles a C file but does not link.
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+All your code should be in the main function
+You can only use putchar twice in your code
 
-- The C file name will be saved in the variable `$CFILE`
-- The output file should be named the same as the C file, but with the extension .o instead of .c.
-  - Example: if the C file is main.c, the output file should be main.o
+####3. When I was having that alphabet soup, I never thought that it would pay off
 
-####3. Hello, puts
+Write a program that prints the alphabet, in lowercase, followed by a new line.
 
-Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+Print all the letters except q and e
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+All your code should be in the main function
+You can only use putchar twice in your code
 
-- Use the function puts
-- You are not allowed to use printf
-- Your program should end with the value 0
+####4. alphABET
 
-####4. Name
-Write a script that compiles a C file and creates an executable named cisfun.
+Write a program that prints the alphabet, in lowercase, and then in uppercase, followed by a new line.
 
-- The C file name will be saved in the variable `$CFILE`
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+All your code should be in the main function
+You can only use putchar three times in your code
 
-####5. Hello, printf
-Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+####5. Numbers
 
-- Use the function printf
-- You are not allowed to use the function puts
-- Your program should return 0
-- Your program should compile without warning when using the -Wall gcc option
+Write a program that prints all numbers of base 10, starting from 0, followed by a new line.
 
-####6. Size is not grandeur, and territory does not make a nation
-Write a C program that prints the size of various types on the computer it is compiled and run on.
+All your code should be in the main function
 
-- You should produce the exact same output as in the example
-- Warnings are allowed
-- Your program should return 0
-- You might have to install the package libc6-dev-i386 on your Linux (Vagrant) to test the -m32 gcc option
+####6. Numberz
+
+Write a program that prints all numbers of base 10, starting from 0, followed by a new line.
+
+You are not allowed to use any variable of type char
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+You can only use putchar twice in your code
+All your code should be in the main function
+
+####7. Smile in the mirror
+
+Write a program that prints the alphabet, in reverse order, in lowercase, followed by a new line.
+
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+All your code should be in the main function
+You can only use putchar twice in your code
+
+####8. Hexadecimal
+
+Write a program that prints all the numbers of base 16, in lowercase, followed by a new line.
+
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+All your code should be in the main function
+You can only use putchar three times in your code
+
+####9. Patience, persistence and perspiration make an unbeatable combination for success
+
+Write a program that prints all possible combinations of single-digit numbers.
+
+Numbers must be separated by ,, followed by a space
+Numbers should be printed in ascending order
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+All your code should be in the main function
+You can only use putchar four times maximum in your code
+You are not allowed to use any variable of type char
+
+####10. 00...99
+
+Write a program that prints numbers from 0 to 99.
+
+Numbers must be separated by ,, followed by a space
+Numbers should be printed in ascending order, with two digits
+You can only use the putchar function (every other functions (printf, puts, etc...) are forbidden)
+You can only use putchar five times maximum in your code
+You are not allowed to use any variable of type char
+All your code should be in the main function
