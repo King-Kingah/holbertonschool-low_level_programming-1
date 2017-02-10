@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - entry point
@@ -7,15 +6,15 @@
  */
 int main(void)
 {
-	char c;
+	int c; /*not allowed to use char variable*/
 
-	c = 1;
+	c = 48; /*48 corresponds with 0 on ASCII chart*/
 
-	while (c <= '9')
+	while (c <= 57)
 {
 		putchar (c);
-		c = c + 1;
+		c++; /*increment operand by 1 until reaching 57*/
 	}
-	putchar ('\n');
+	putchar ('\n'); /*add new line*/
 	return (0);
 }
