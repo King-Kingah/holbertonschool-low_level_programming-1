@@ -14,7 +14,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	printf("Last digit of ");
 	printf("%d", n);
-	printf(" is %d ",n%10);
+	printf(" is %d ", n % 10);
 	if (n > 5)
 	{
 		printf("and is greater than 5\n");
