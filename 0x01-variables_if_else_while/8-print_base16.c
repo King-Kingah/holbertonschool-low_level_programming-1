@@ -9,16 +9,18 @@ int main(void)
 	char a;
 	char b;
 
-	a = 48;
-	b = 97;
+	a = 48; /* 48 corresponds with 0 on ASCII chart */
+	b = 97; /* 97 corresponds with a on ASCII chart */
 
-	while (a <= 57)
+	while (a <= 57) /* 57 corresponds with 9 on ASCII chart*/
 {
-		putchar (a);
+	putchar (a); /* this function will output char starting at 48 */
+	a++; /* increment putchar operand by 1 until 57 */
 	}
-	while (b <= 102)
+	while (b <= 102) /* 102 corresponds with f on ASCII chart */
 	{
-		putchar (b);
+		putchar (b); /* output char starting at 97  */
+	b++; /* increment putchar operand by 1 until 102 */
 	}
 	putchar ('\n');
 	return (0);
