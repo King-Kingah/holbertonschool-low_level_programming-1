@@ -13,6 +13,12 @@ int main(void)
 	while (n <= 57) /*57 corresponds with ASCII character 9*/
 {
 	putchar (n); /*output char beginning with 48*/
+	if (n != 57) /*if int does not equal 9...*/
+	{
+		putchar(','); /*...then print a comma */
+		putchar(' '); /*and a space until you reach 9*/
+}
+
 	n++; /*increment operand by 1 until reaching 57 */
 }
 	putchar ('\n'); /*add new line*/
