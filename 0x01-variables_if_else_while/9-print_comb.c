@@ -6,20 +6,16 @@
  */
 int main(void)
 {
-	char a;
-	char b;
+	int n; /*not allowed to use char variable*/
 
-	a = 48;
-	b = 97;
+	n = 48; /*48 corresponds with ASCII character 0*/
 
-	while (a <= 57)
+	while (n <= 57) /*57 corresponds with ASCII character 9*/
 {
-		putchar (a);
-	}
-	while (b <= 102)
-	{
-		putchar (b);
-	}
-	putchar ('\n');
+	putchar (n); /*output char beginning with 48*/
+	n++; /*increment operand by 1 until reaching 57 */
+}
+	putchar ('\n'); /*add new line*/
+
 	return (0);
 }
