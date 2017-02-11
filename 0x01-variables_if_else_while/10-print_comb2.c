@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int a, b; /*not allowed to use char variable*/
+	int a, b; /*not allowed to use variable*/
 
 	a = 0; /*digits 0-9 for tens column*/
 	b = 0; /*digits 0-9 for ones colun*/
@@ -17,12 +17,12 @@ int main(void)
 		b = 0;
 		while (b <= 9)
 		{
-			putchar('0' + a); /*output char beginning with 0*/
-			putchar('0' + b); /*output char beginning with 0*/
-			if (a != 9 || b != 9) /*if int does not equal 9...*/
+			putchar('0' + a); /*output beginning with 0*/
+			putchar('0' + b); /*output beginning with 0*/
+			if (a != 9 || b != 9) /*if int does not equal 9*/
 			{
-				putchar(','); /*...then print a comma */
-				putchar(' '); /*and a space until you reach 9*/
+				putchar(','); /*print a comm */
+				putchar(' '); /*print space until you reach 9*/
 			}
 			b++;
 		}
