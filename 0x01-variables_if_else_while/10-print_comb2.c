@@ -21,7 +21,7 @@ int main(void)
 			putchar('0' + b); /*output beginning with 0*/
 			if (a != 9 || b != 9) /*if int does not equal 9*/
 			{
-				putchar(','); /*print a comm */
+				putchar(','); /*print a comma */
 				putchar(' '); /*print space until you reach 9*/
 			}
 			b++;
