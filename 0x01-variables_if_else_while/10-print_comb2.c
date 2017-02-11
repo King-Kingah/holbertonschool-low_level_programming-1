@@ -7,11 +7,10 @@
  */
 int main(void)
 {
-	int a, b;
+	int a;
+	int b;
 
 	a = 0;
-	b = 0;
-
 	while (a <= 9)
 	{
 		b = 0;
@@ -28,7 +27,6 @@ int main(void)
 		}
 		a++;
 	}
-	putchar ('\n');
-
+	putchar('\n');
 	return (0);
 }
