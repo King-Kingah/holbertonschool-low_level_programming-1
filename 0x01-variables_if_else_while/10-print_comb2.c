@@ -6,20 +6,28 @@
  */
 int main(void)
 {
-	char a;
-	char b;
+	int a, b; /*not allowed to use char variable*/
 
-	a = 48;
-	b = 97;
+	a = 0; /*digits 0-9 for tens column*/
+	b = 0; /*digits 0-9 for ones colun*/
 
-	while (a <= 57)
-{
-		putchar (a);
-	}
-	while (b <= 102)
+	while (a <= 9)
 	{
-		putchar (b);
+		b = 0;
+		while (b <= 9)
+		{
+			putchar('0' + a); /*output char beginning with 0*/
+			putchar('0' + b); /*output char beginning with 0*/
+			if (a != 9 || b != 9) /*if int does not equal 9...*/
+			{
+				putchar(','); /*...then print a comma */
+				putchar(' '); /*and a space until you reach 9*/
+			}
+			b++;
+		}
+		a++; /*increment operand by 1 until reaching 9 */
 	}
-	putchar ('\n');
+	putchar ('\n'); /*add new line*/
+
 	return (0);
 }
