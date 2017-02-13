@@ -7,10 +7,6 @@
 */
 int main(void)
 {
- /* list all integers on separate lines,
-  * declare variable a,b as integers
-  * declare a value as 0
-*/
 	int a = 0;
 	int b;
 
