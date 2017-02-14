@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *main -
+ *main - use only user defined variables to create output
  *
- *Return:  Write a program that prints Holberton, followed by a new line.
+ *Return: print to stdout "Holberton", followed by a new line.
  */
 int main(void)
 {
