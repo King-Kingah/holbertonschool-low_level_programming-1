@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *print alphabet- use only user defined variables to create output
+ *print_alphabet- use only user defined variables to create output
  *
  *Return: print to stdout the alphabet, in lowercase, followed by a new line.
  */
@@ -11,7 +11,7 @@ void print_alphabet(void)
 
 	c = 'a';
 
-	while ( c <= 'z' )
+	while (c <= 'z')
 	{
 		_putchar(c);
 		c++;
