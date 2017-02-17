@@ -3,6 +3,8 @@
 /**
  *print_numbers - prints numbers 0 to 9
  *@void: no argument
+ *
+ *Return: always 0
  */
 int print_numbers(void)
 {
