@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- *
+ *print_times_table - function to print multiplication table
+ *@n: integer
  */
 void print_times_table(int n)
 {
@@ -35,7 +36,7 @@ void print_times_table(int n)
 			}
 			else
 			{
-				_putchar(',');
+				_putchar(','); _putchar(' ');
 				_putchar(k / 100 + '0');
 				_putchar(k / 10 % 10 + '0');
 				_putchar(k % 10 + '0');
