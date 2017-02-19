@@ -18,7 +18,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if(i < 48)
+		if (i < 48)
 			printf("%lu, ", b);
 		else
 			printf("%lu\n", b);
