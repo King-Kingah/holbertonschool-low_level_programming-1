@@ -15,10 +15,11 @@ int main(void)
 
 	for (i = 1; i <= n; i++)
 	{
-		printf("%lu ", a);
+		printf("%lu, ", a);
 		c = a + b;
 		a = b;
 		b = c;
 	}
+	printf("\n");
 	return (0);
 }
