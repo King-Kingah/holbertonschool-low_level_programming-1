@@ -1,10 +1,9 @@
 #include<stdio.h>
+
 /**
  * main - program to print fibonacci sequence (first 50)
- *
- * Return: 0 is always right
+ * Return: 0
  */
-
 int main(void)
 {
 	unsigned int i;
@@ -14,7 +13,7 @@ int main(void)
 
 	printf("%lu, ", a);
 
-	for (i = 1; i <= 48; i++)
+	for (i = 0; i <= 48; i++)
 	{
 		c = a + b;
 		a = b;
