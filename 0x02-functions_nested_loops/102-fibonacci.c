@@ -1,35 +1,28 @@
 #include<stdio.h>
 /**
- * main - program to print fibonacci sequence
+ * main - program to print fibonacci sequence (first 50)
  *
  * Return: 0 is always right
  */
 
 int main(void)
 {
-	unsigned long int n = 50;
-	unsigned long int i;
-	unsigned long int a = 0;
+	unsigned int i;
+	unsigned long int a = 1;
 	unsigned long int b = 1;
 	unsigned long int c;
 
-	for (i = 1; i <= n; i++)
+	printf("%lu, ", a);
+
+	for (i = 1; i <= 48; i++)
 	{
-		if(i < 50)
-		{
-			printf("%lu, ", a);
-			c = a + b;
-			a = b;
-			b = c;
-		}
+		c = a + b;
+		a = b;
+		b = c;
+		if(i < 48)
+			printf("%lu, ", b);
 		else
-		{
-			printf("%lu", a);
-			c = a + b;
-			a = b;
-			b = c;
-		}
+			printf("%lu\n", b);
 	}
-	printf("\n");
 	return (0);
 }
