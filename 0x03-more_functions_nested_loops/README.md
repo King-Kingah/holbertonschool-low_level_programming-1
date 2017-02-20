@@ -1,4 +1,4 @@
-#0x02. C - functions, nested loops 
+#0x03 C - more functions, more nested loops
 ## Description
 At the end of this project we are expected to be able to explain to anyone, without the help of Google:
 - What are nested loops and how to use them
