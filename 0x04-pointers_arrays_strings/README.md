@@ -6,6 +6,7 @@ At the end of this project we are expected to be able to explain to anyone, with
 - What are the differences between pointers and arrays
 - How to use strings and how to manipulate them
 - Scope of variables
+- 
 
 ### Tasks
 ####0. 98 Battery st.
