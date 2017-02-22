@@ -3,8 +3,8 @@
 
 /**
  * print_array - print array of integers
- * @int *a: integer
- * @int n: integer
+ * @a: integer
+ * @n: integer
  */
 
 void print_array(int *a, int n)
