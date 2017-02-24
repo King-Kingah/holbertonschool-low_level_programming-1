@@ -19,7 +19,7 @@ char *rot13(char *str)
 			{
 			str[i] = to[j];
 			}
-			else
+			else if (str[i] == to[j])
 			{
 				str[i] = from[j];
 			}
