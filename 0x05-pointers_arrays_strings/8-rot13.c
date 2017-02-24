@@ -8,7 +8,7 @@ char *rot13(char *str)
 {
 	int i;
 	int j;
-	char from[] = "abcdefghijklmABCDEFGHIJKL";
+	char from[] = "abcdefghijklmABCDEFGHIJKLM";
 	char to[] = "nopqrstuvwxyzNOPQRSTUVWXYZ";
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -18,6 +18,10 @@ char *rot13(char *str)
 			if (str[i] == from[j])
 			{
 			str[i] = to[j];
+			}
+			else
+			{
+				str[i] = from[j];
 			}
 		}
 	}
