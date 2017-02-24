@@ -1,0 +1,13 @@
+# never push ~ files
+*~
+**/*~
+
+# ignore main files
+**/*main.c
+
+# ignore #files#
+**/\#*
+
+# ignore _putchar.c and a.out
+**/_putchar.c
+**/a.out
