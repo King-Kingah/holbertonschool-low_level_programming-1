@@ -3,7 +3,7 @@
  * cap_string - capitalizes all words of a string
  * @str: character string
  *
- * Return: string with upper case
+ * Return: string with each word capitalized
  */
 
 char *cap_string(char *str)
@@ -18,9 +18,10 @@ char *cap_string(char *str)
 		{
 			str[i] -= 32;
 		}
-		else if (str[i - 1] == ','||';'||'.'||'!')
+		else if (str[i - 1] == 32||'\t'||'\n'||','||';'||'.'||'!'||'?'||
+			 '"'||'('||')'||'{'||'}')
 			str[i] -= 32;
-		}
+	}
 	}
 	return (str);
 }
