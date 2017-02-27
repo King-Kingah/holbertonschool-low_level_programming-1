@@ -1,87 +1,69 @@
-#0x05. C - more pointers, arrays and strings
+#0x06. C - even more pointers, arrays and strings
 ## Description
 At the end of this project we are expected to be able to explain to anyone, without the help of Google:
-- What are pointers and how to use them
-- What are arrays and how to use them
-- What are the differences between pointers and arrays
-- How to use strings and how to manipulate them
-- Scope of variables
+- What are pointers to pointers and how to use them
+- What are multidimensional arrays and how to use them
+- What are the most common C standard library functions to manipulate strings
 
 ### Tasks
-####0. strcat
+####0. memset mandatory
 
-Write a function that concatenates two strings.
+Write a function that fills memory with a constant byte.
 
-- Prototype: `char *_strcat(char *dest, char *src)`
-- This function appends the `src` string to the `dest` string, overwriting the terminating null byte `(\0)` at the end of `dest`, and then adds a terminating null byte
-- Returns a pointer to the resulting string `dest`
+- Prototype: char *_memset(char *s, char b, unsigned int n);
+- The _memset() function fills the first n bytes of the memory area pointed to by s with the constant byte b
+- Returns a pointer to the memory area s
 
-File: 0-strcat.c
+####1. memcpy
 
-####1. strncat
+Write a function that copies memory area.
 
-Write a function that concatenates two strings.
+- Prototype: char *_memcpy(char *dest, char *src, unsigned int n);
+- The _memcpy() function copies n bytes from memory area src to memory area dest
+- Returns a pointer to dest
 
-- Prototype: `char *_strncat(char *dest, char *src, int n)`
-- The _strncat function is similar to the _strcat function, except that
- - it will use at most `n` bytes from `src`; and
- - `src` does not need to be null-terminated if it contains `n` or more bytes
-- Return a pointer to the resulting string `dest`
+####2. strchr
+Write a function that locates a character in a string.
 
-File: 1-strncat.c
+- Prototype: char *_strchr(char *s, char c);
+- Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
 
-####2. strncpy
-Write a function that copies a string.
+####3. strspn
+Write a function that gets the length of a prefix substring.
 
-- Prototype: `char *_strncpy(char *dest, char *src, int n)`
-- Your function should work exactly like strncpy
+- Prototype: unsigned int _strspn(char *s, char *accept);
+- Returns the number of bytes in the initial segment of s which consist only of bytes from accept
 
-File: 2-strncpy.c
+####4. strpbrk
+Write a function that searches a string for any of a set of bytes.
 
-####3. strcmp
-Write a function that compares two strings.
+- Prototype: char *_strpbrk(char *s, char *accept);
+- The _strpbrk() function locates the first occurrence in the string s of any of the bytes in the string accept
+- Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
 
-- Prototype: `int _strcmp(char *s1, char *s2)`
-- Your function should work exactly like `strcmp`
+####5. strstr
+Write a function that locates a substring.
 
-File: 3-strcmp.c
+- Prototype: char *_strstr(char *haystack, char *needle);
+- The _strstr() function finds the first occurrence of the substring needle in the string haystack. The terminating null bytes (\0) are not compared
+- Returns a pointer to the beginning of the located substring, or NULL if the substring is not found.
 
-####4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy mandatory
+####6. Chess is mental torture
+Write a function that prints the chessboard.
 
-Write a function that reverses the content of an array of integers.
+- Prototype: void print_chessboard(char (*a)[8]);
 
-- Prototype: `void reverse_array(int *a, int n);`
-- Where `n` is the number of elements of the array
+####7. The line of life is a ragged diagonal between duty and desire
+Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
-File: 4-rev_array.c
+- Prototype: void print_diagsums(int *a, int size);
+- Format: see example
+- You are allowed to use the standard library
 
-####5. Write a function that changes all lowercase letters of a string to uppercase.
+####8. Double pointer, double fun
+Write a function that sets the value of a pointer to a char.
 
-- Prototype: `char *string_toupper(char *);`
-
-File: 5-string_toupper.c
-
-####6. Write a function that capitalizes all words of a string.
-
-- Prototype: `char *cap_string(char *)`
-
-File: 6-cap_string.c
-
-####7. Mozart composed his music not for the elite, but for everybody
-Write a function that encodes a string into 1337.
-
-- Prototype: `char *leet(char *)`
-
-File: 7-leet.c
-
-####8. rot13
-
-Write a function that encodes a string using rot13.
-
-- Prototype: `char *rot13(char *)`
-
-File: 8-rot13.c
-
+- Prototype: void set_string(char **s, char *to);
 ___
 ###Advanced Tasks
 ####9. ?
