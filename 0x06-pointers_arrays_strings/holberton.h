@@ -32,6 +32,10 @@ char *_strpbrk(char *s, char *accept);
  */
 char *_strstr(char *haystack, char *needle);
 /**
+ * Write a function that prints the chessboard.
+ */
+void print_chessboard(char (*a)[8]);
+/**
  * Write a function that prints the sum of the two diagonals of a square matrix of integers.
  */
 void print_diagsums(int *a, int size);
