@@ -6,7 +6,7 @@ At the end of this project we are expected to be able to explain to anyone, with
 - What are the most common C standard library functions to manipulate strings
 
 ### Tasks
-####0. memset mandatory
+####0. memset
 
 Write a function that fills memory with a constant byte.
 
@@ -64,8 +64,10 @@ Write a function that prints the sum of the two diagonals of a square matrix of 
 Write a function that sets the value of a pointer to a char.
 
 - Prototype: void set_string(char **s, char *to);
+
 ___
 ###Advanced Tasks
+
 ####9. ?
 
 ###10. ?
