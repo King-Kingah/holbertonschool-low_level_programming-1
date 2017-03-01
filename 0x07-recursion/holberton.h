@@ -4,42 +4,41 @@
 int _putchar(char c);
 
 /**
- * Write a function that fills memory with a constant byte.
+ * Write a function that prints a string, followed by a new line.
  */
-char *_memset(char *s, char b, unsigned int n);
+void _puts_recursion(char *s);
 
 /**
- * Write a function that copies memory area.
+ * Write a function that prints a string in reverse.
  */
-char *_memcpy(char *dest, char *src, unsigned int n);
+void _print_rev_recursion(char *s);
 
 /**
- * Write a function that locates a character in a string.
+ * Write a function that returns the length of a string.
  */
-char *_strchr(char *s, char c);
+int _strlen_recursion(char *s);
 
 /**
- * Write a function that gets the length of a prefix substring.
+ * Write a function that returns the factorial of a given number.
  */
-unsigned int _strspn(char *s, char *accept);
+int factorial(int n);
 
 /**
- * Write a function that searches a string for any of a set of bytes.
+ * Write a function that returns the value of x raised to the power of y.
  */
-char *_strpbrk(char *s, char *accept);
+int _pow_recursion(int x, int y);
+
 /**
- * Write a function that locates a substring.
+ * Write a function that returns the natural square root of a number.
  */
-char *_strstr(char *haystack, char *needle);
+int _sqrt_recursion(int n);
+
 /**
- * Write a function that prints the chessboard.
+ * Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
  */
-void print_chessboard(char (*a)[8]);
+int is_prime_number(int n);
+
 /**
- * Write a function that prints the sum of the two diagonals of a square matrix of integers.
+ * Write a function that returns 1 if a string is a palindrome and 0 if not.
  */
-void print_diagsums(int *a, int size);
-/**
- * Write a function that sets the value of a pointer to a char.
- */
-void set_string(char **s, char *to);
+int is_palindrome(char *s);
