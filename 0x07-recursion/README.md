@@ -1,75 +1,63 @@
-#0x06. C - even more pointers, arrays and strings
+#0x07. C - Recursion
 ## Description
 At the end of this project we are expected to be able to explain to anyone, without the help of Google:
-- What are pointers to pointers and how to use them
-- What are multidimensional arrays and how to use them
-- What are the most common C standard library functions to manipulate strings
+- What is recursion, and how to use it
 
 ### Tasks
-####0. memset
+####0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget
 
-Write a function that fills memory with a constant byte.
+Write a function that prints a string, followed by a new line.
 
-- Prototype: char *_memset(char *s, char b, unsigned int n);
-- The _memset() function fills the first n bytes of the memory area pointed to by s with the constant byte b
-- Returns a pointer to the memory area s
+- Prototype: void _puts_recursion(char *s);
 
-####1. memcpy
+####1. Why is it so important to dream? Because, in my dreams we are together
 
-Write a function that copies memory area.
+Write a function that prints a string in reverse.
 
-- Prototype: char *_memcpy(char *dest, char *src, unsigned int n);
-- The _memcpy() function copies n bytes from memory area src to memory area dest
-- Returns a pointer to dest
+- Prototype: void _print_rev_recursion(char *s);
 
-####2. strchr
-Write a function that locates a character in a string.
+####2. Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange
 
-- Prototype: char *_strchr(char *s, char c);
-- Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
+Write a function that returns the length of a string.
 
-####3. strspn
-Write a function that gets the length of a prefix substring.
+- Prototype: int _strlen_recursion(char *s);
 
-- Prototype: unsigned int _strspn(char *s, char *accept);
-- Returns the number of bytes in the initial segment of s which consist only of bytes from accept
+####3. You mustn't be afraid to dream a little bigger, darling
 
-####4. strpbrk
-Write a function that searches a string for any of a set of bytes.
+Write a function that returns the factorial of a given number.
 
-- Prototype: char *_strpbrk(char *s, char *accept);
-- The _strpbrk() function locates the first occurrence in the string s of any of the bytes in the string accept
-- Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
+- Prototype: int factorial(int n);
+- If n is lower than 0, the function should return -1 to indicate an error
+- Factorial of 0 is 1
 
-####5. strstr
-Write a function that locates a substring.
+####4. Once an idea has taken hold of the brain it's almost impossible to eradicate
 
-- Prototype: char *_strstr(char *haystack, char *needle);
-- The _strstr() function finds the first occurrence of the substring needle in the string haystack. The terminating null bytes (\0) are not compared
-- Returns a pointer to the beginning of the located substring, or NULL if the substring is not found.
+Write a function that returns the value of x raised to the power of y.
 
-####6. Chess is mental torture
-Write a function that prints the chessboard.
+- Prototype: int _pow_recursion(int x, int y);
+- If y is lower than 0, the function should return -1
 
-- Prototype: void print_chessboard(char (*a)[8]);
+####5. Your subconscious is looking for the dreamer
 
-####7. The line of life is a ragged diagonal between duty and desire
-Write a function that prints the sum of the two diagonals of a square matrix of integers.
+Write a function that returns the natural square root of a number.
 
-- Prototype: void print_diagsums(int *a, int size);
-- Format: see example
-- You are allowed to use the standard library
+- Prototype: int _sqrt_recursion(int n);
+- If n does not have a natural square root, the function should return -1
+- FYI: The standard library provides a different function: sqrt. Run man sqrt to learn more.
 
-####8. Double pointer, double fun
-Write a function that sets the value of a pointer to a char.
+####6. Inception. Is it possible?
 
-- Prototype: void set_string(char **s, char *to);
+Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
+- Prototype: int is_prime_number(int n);
+
+####7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything
+
+Write a function that returns 1 if a string is a palindrome and 0 if not.
+
+- Prototype: int is_palindrome(char *s);
+- An empty string is a palindrome
 ___
 ###Advanced Tasks
 
-####9. ?
-
-###10. ?
-
-####11. ?
+####8.
