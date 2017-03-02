@@ -1,25 +1,52 @@
 #include "holberton.h"
 
 /**
- * is_palindrome - checks if string is a palindrome
+ * _strlen_recursion - return length of string
  * @s: character string
- * Return 1 if string is a palindrome, and 0 if not
+ * Return: string length
  */
-int is_palindrome(char *s)
+int _strlen_recursion(char *s)
 {
 	int i = 0;
-	int leftIndex = 0;
-	int rightIndex = i - 1;
 
-	if (s == '\0' || leftIndex < 0 || rightIndex < 0)
+	if (*s == '\0')
 	{
 		return (0);
 	}
-	else if (leftIndex >= rightIndex)
-		return (1);
-	if (s[leftIndex] == s[rightIndex])
+	else
 	{
-		return is_palindrome(s);
+		i = _strlen_recursion(s + 1);
+		i++;
 	}
-	return (5);
+	return (i);
+}
+
+/**
+ * _str_scan - scan character string
+ * @a: character
+ * @b: character
+ * Return: character at given point
+ */
+int _str_scan(char *a, char *b)
+{
+	if (*a == *b)
+		return (1);
+	else if (a <= b)
+		return (0);
+	else
+		return (_str_scan(a + 1, b - 1));
+}
+
+/**
+ * is_palindrome - checks if string is a palindrome
+ * @s: character string
+ * Return: 1 if string is a palindrome, and 0 if not
+ */
+int is_palindrome(char *s)
+{
+	int i = _strlen_recursion(s);
+	char *a = s;
+	char *b = s + (i - 1);
+
+	return (_str_scan(a, b));
 }
