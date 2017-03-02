@@ -52,3 +52,11 @@ int prime_or_not(int j, int k);
  *natural - helper function for _sqrt_recursion
  */
 int natural(int i, int j);
+
+/**
+ * _str_scan - scan character string
+ * @a: character
+ * @b: character
+ * Return: character at given point
+ */
+int _str_scan(char *a, char *b);
