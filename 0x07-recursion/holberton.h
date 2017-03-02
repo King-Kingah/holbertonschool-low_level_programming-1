@@ -47,3 +47,8 @@ int is_palindrome(char *s);
  * prime_or_not - helper function to support is_prime_number function
  */
 int prime_or_not(int j, int k);
+
+/**
+ *natural - helper function for _sqrt_recursion
+ */
+int natural(int i, int j);
