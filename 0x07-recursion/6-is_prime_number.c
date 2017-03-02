@@ -21,6 +21,8 @@ int prime_or_not(int j, int k)
 		return (0);
 	if (j == k)
 		return (1);
+	if (j % k == 0)
+		return (0);
 	else
 		return (prime_or_not(j, k + 1));
 }
