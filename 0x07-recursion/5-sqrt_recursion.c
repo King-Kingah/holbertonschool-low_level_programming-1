@@ -26,6 +26,6 @@ int natural(int i, int j)
 	if (square == i)
 		return (j);
 	else
-		return (natural(n, j + 1));
+		return (natural(i, j + 1));
 
 }
