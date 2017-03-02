@@ -42,3 +42,8 @@ int is_prime_number(int n);
  * Write a function that returns 1 if a string is a palindrome and 0 if not.
  */
 int is_palindrome(char *s);
+
+/**
+ * prime_or_not - helper function to support is_prime_number function
+ */
+int prime_or_not(int j, int k);
