@@ -29,10 +29,10 @@ int _strlen_recursion(char *s)
  */
 int _str_scan(char *a, char *b)
 {
-	if (*a == *b)
-		return (1);
-	else if (a <= b)
+	if (*a != *b)
 		return (0);
+	else if (a >= b)
+		return (1);
 	else
 		return (_str_scan(a + 1, b - 1));
 }
@@ -48,5 +48,7 @@ int is_palindrome(char *s)
 	char *a = s;
 	char *b = s + (i - 1);
 
+	if (i == 0)
+		return (1);
 	return (_str_scan(a, b));
 }
