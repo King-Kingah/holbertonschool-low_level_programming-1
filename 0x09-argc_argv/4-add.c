@@ -11,20 +11,31 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
+	int j;
 	int sum = 0;
+	char *p;
 
 	if (argc == 0)
 	{
 		return (0);
 		printf("\n");
 	}
-	else if (argc > 1)
+	else
 	{
-		for (i = 1; i < argc; i++)
-		{
-			sum += atoi(argv[i]);
+		for (i = 1; argv[i]; i++)
+	 	{
+			j += strtol(argv[i], &*p, 10);
+			if (!*p)
+			{
+				sum += j;
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		printf("%d\n", sum);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
