@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc > 1)
 	{
 		for (i = 1; argv[i]; i++)
-	 	{
+		{
 			j = strtol(argv[i], &p, 10);
 			if (!*p)
 			{
