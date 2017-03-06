@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
  *main - add positive numbers
  *@argc: argument count
@@ -10,21 +10,16 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	int j;
-	int sum = 0;
+	int i;
+	long int sum;
 	char *p;
+	int j;
 
-	if (argc == 0)
-	{
-		return (0);
-		printf("\n");
-	}
-	else
+	if (argc > 1)
 	{
 		for (i = 1; argv[i]; i++)
 	 	{
-			j += strtol(argv[i], &*p, 10);
+			j = strtol(argv[i], &p, 10);
 			if (!*p)
 			{
 				sum += j;
@@ -36,6 +31,6 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
