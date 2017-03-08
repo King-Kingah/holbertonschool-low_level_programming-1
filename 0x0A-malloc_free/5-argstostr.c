@@ -10,6 +10,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i = 0;
+	int j;
 	char *p;
 
 	if (ac == 0 || av == NULL)
@@ -21,5 +22,10 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
+	for (i = 0, j = 0; i < ac; i++, j++)
+	{
+		p[j] = av[i][j];
+	}
+
 	return (p);
 }
