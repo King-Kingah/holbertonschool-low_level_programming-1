@@ -11,11 +11,20 @@ char *argstostr(int ac, char **av)
 {
 	int i = 0;
 	int j;
+	int x;
+	int y;
 	char *p;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
+	}
+	for (i = 0, x = 0, y = 0; x < ac; i++)
+	{
+		if (av[x][y] == '\0')
+		{
+			x++;
+		}
 	}
 	p = malloc(i * sizeof(char));
 	if (p == NULL)
