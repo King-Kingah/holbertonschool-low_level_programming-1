@@ -1,55 +1,44 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- *string_nconcat - function to concatenate two strings
- *@s1: character string
- *@s2: character string
- *@n: unsigned integer
- *Return: pointer to newly allocated space in memory, which
- *contains s1 followed by the first n bytes of s2, and null terminated
- *return NULL if function fails
+ * string_nconcat - concat n bytes from s2 onto s1 in a new memory space
+ * @s1: string one
+ * @s2: string two
+ * @n: number of bytes from s2 to concat onto s1
+ *
+ * Return: pointer to new string, NULL on fail
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *a;
+	char *s;
 	unsigned int i;
 	unsigned int j;
 	unsigned int c;
 	unsigned int d;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
-	j++;
 
-	if (n > j)
-	{
-		a = malloc((i + j) * sizeof(*a));
-	}
+	for (c = 0; *(s1 + c); c++)
+		;
+	for (d = 0; *(s2 + d); d++)
+		;
+	d++;
+
+	if (n > d)
+		s = malloc((c + d) * sizeof(*s));
 	else
-		a = malloc((i + n + 1) * sizeof(*a));
-	if (a == NULL)
-	{
+		s = malloc((c + n + 1) * sizeof(*s));
+	if (s == NULL)
 		return (NULL);
-	}
-	for (c = 0; c < i; c++)
-	{
-		*(a + c) = *(s1 + c);
-	}
-	for (d = 0; d < j && d < n; c++, d++)
-	{
-		*(a + c) = *(s2 + d);
-	}
-	*(a + i) = '\0';
-	return (a);
+
+	for (i = 0; i < c; i++)
+		*(s + i) = *(s1 + i);
+	for (j = 0; j < d && j < n; i++, j++)
+		*(s + i) = *(s2 + j);
+	*(s + i) = '\0';
+
+	return (s);
 }
