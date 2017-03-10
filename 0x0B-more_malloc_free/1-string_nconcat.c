@@ -34,17 +34,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n > j)
 	{
-		a = malloc((i + j) * sizeof(a));
+		a = malloc((i + j) * sizeof(*a));
 	}
 	else
-		a = malloc(i * sizeof(*a));
+		a = malloc((i + n) * sizeof(*a));
 	if (a == NULL)
 	{
 		return (NULL);
 	}
 	for (c = 0; c < i; c++)
 	{
-		;
+		*(a + 1) = *(s1 + 1);
 	}
 	for (d = 0; d < j; c++, d++)
 	{
