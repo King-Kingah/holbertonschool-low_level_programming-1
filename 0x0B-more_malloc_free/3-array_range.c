@@ -5,20 +5,23 @@
  * @min: smallest number
  * @max: biggest number
  * Return: the pointer to the newly created array
- *If min > max, return NULL - malloc fails, return NULL
  */
+
 int *array_range(int min, int max)
 {
 	int *arr;
+	int i;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
-	arr = malloc((max - min + 1) * sizeof(int));
+	arr = malloc((max - min + 1) * sizeof(*arr));
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
+	for (i = 0; min <= max; i++, max++)
+		arr[i] = min;
 	return (arr);
 }
