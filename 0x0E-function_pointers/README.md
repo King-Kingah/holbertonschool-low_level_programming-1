@@ -41,11 +41,11 @@ Write a program that performs simple operations.
 - The program prints the result of the operation, followed by a new line
 - num1, num2 are integers. Use the atoi function to convert them to int
 - operator is one of the following:
- - +: addition
- - -: subtraction
- - *: multiplication
- - /: division
- - %: modulo
+  - +: addition
+  - -: subtraction
+  - *: multiplication
+  - /: division
+  - %: modulo
 - You can assume that the result of all operations can be stored in an int
 - if the number of arguments is wrong, print Error, followed by a new line, and exit with the status 98
 - if the operator is none of the above, print Error, followed by a new line, and exit with the status 99
