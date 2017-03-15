@@ -1,4 +1,4 @@
-#0x0E. C - Function pointers
+# 0x0E. C - Function pointers
 
 ## Description
 At the end of this project we are expected to be able to explain to anyone, without the help of Google:
@@ -8,13 +8,13 @@ At the end of this project we are expected to be able to explain to anyone, with
 
 ### Tasks
 
-####0. What's my name
+#### 0. What's my name
 
 Write a function that prints a name.
 
 - Prototype: void print_name(char *name, void (*f)(char *));
 
-####1. If you spend too much time thinking about a thing, you'll never get it done
+#### 1. If you spend too much time thinking about a thing, you'll never get it done
 
 Write a function that executes a function given as a parameter on each element of an array.
 
@@ -22,7 +22,7 @@ Write a function that executes a function given as a parameter on each element o
 - where size is the size of the array
 - and action is a pointer to the function you need to use
 
-####2. To hell with circumstances; I create opportunities
+#### 2. To hell with circumstances; I create opportunities
 
 Write a function that searches for an integer.
 
@@ -33,6 +33,6 @@ Write a function that searches for an integer.
 - If no element matches, return -1
 - If size <= 0, return -1
 
-####3. A goal is not always meant to be reached, it often serves simply as something to aim at
+#### 3. A goal is not always meant to be reached, it often serves simply as something to aim at
 
 Write a program that performs simple operations.
