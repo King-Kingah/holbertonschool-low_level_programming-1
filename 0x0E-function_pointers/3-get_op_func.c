@@ -17,7 +17,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0; i < 5, i++)
+	for (i = 0; i < 5; i++)
 	{
 		if (ops[i])
 			return (ops[i]);
