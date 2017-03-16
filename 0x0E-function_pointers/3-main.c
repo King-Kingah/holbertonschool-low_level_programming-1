@@ -34,6 +34,6 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	printf("%d\n", op(a,b));
+	printf("%d\n", op(a, b));
 	return (0);
 }
