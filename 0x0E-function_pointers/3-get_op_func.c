@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdio.h>
 /**
  * get_op_func - function to select correct operation
  * @s: operator passed as argument to the program
@@ -17,10 +18,12 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0; i < 5; i++)
+	i = 0;
+	while (i < 5)
 	{
 		if (ops[i])
-			return (ops[i]);
+			return (ops[i].f);
+		i++;
 	}
 	return (NULL);
 }
