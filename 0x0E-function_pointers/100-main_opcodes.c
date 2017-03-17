@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int bytes;
-	int i = 0;
+	int i;
 	unsigned char *a;
 
 	if (argc != 2)
@@ -29,6 +29,8 @@ int main(int argc, char *argv[])
 	a = (unsigned char *)main;
 	if (bytes > 0)
 	{
+		for (i = 0; i < bytes; i++)
+			printf("%x\n", a[i]);
 		printf("%x\n", a[i]);
 	}
 	return (0);
