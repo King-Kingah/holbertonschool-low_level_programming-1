@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - prints opcode of own main function
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 if success,
+ *1 if number of arg not correct,
+ *2 if number of bytes is negative
+ */
+
+int main(int argc, char *argv[])
+{
+	if (argc >= 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	if ()
+	{
+
+	}
+	return (0);
+}
