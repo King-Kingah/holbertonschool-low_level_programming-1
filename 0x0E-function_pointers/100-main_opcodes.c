@@ -11,6 +11,9 @@
 
 int main(int argc, char *argv[])
 {
+	int bytes;
+	unsigned char *a;
+
 	if (argc >= 2)
 	{
 		printf("Error\n");
@@ -21,9 +24,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	if ()
+	a = (unsigned char *)main;
+	if (bytes > 0)
 	{
-
+		printf("%x\n", a[i]);
 	}
 	return (0);
 }
