@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	if (bytes > 0)
 	{
 		for (i = 0; i < bytes; i++)
-			printf("%x\n", a[i]);
+			printf("%x", a[i]);
 		printf("%x\n", a[i]);
 	}
 	return (0);
