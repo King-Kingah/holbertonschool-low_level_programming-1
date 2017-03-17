@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int bytes;
-	int i;
+	int i = 0;
 	unsigned char *a;
 
 	if (argc != 2)
