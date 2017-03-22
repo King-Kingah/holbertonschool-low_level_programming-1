@@ -9,4 +9,10 @@ void _printchar(va_list list);
 void _printstr(va_list list);
 void _printfloat(va_list list);
 void _printint(va_list list);
+
+typedef struct checkformat
+{
+	char *type;
+	void (*f)();
+} checkformat;
 #endif
