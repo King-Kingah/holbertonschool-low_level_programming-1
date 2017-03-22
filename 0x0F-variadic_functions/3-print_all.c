@@ -56,15 +56,21 @@ void print_all(const char * const format, ...)
 
 	checkformat fmt[] = {
 		{ "c", _printchar},
-		{ "f", _printstr},
-		{ "s", _printfloat},
+		{ "f", _printfloat},
+		{ "s", _printstr},
 		{ "i", _printint},
 	};
 
 	va_start(list, format);
 	while (format != NULL && format[i / 4] != '\0')
 	{
-		printf("%s", a);
+		j = i % 4;
+		if (fmt[j].type[0] == format[i / 4])
+		{
+			printf("%s", a);
+			fmt[j].f(list);
+			a = ", ";
+		}
 		i++;
 	}
 	printf("\n");
