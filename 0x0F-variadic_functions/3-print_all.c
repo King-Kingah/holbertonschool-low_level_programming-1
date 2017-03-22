@@ -50,8 +50,16 @@ void _printint(va_list list)
 void print_all(const char * const format, ...)
 {
 	unsigned int i = 0;
+	unsigned int j = 0;
 	va_list list;
-	char *a = "";;
+	char *a = "";
+
+	checkformat fmt[] = {
+		{ "c", _printchar},
+		{ "f", _printstr},
+		{ "s", _printfloat},
+		{ "i", _printint},
+	};
 
 	va_start(list, format);
 	while (format != NULL && format[i / 4] != '\0')
