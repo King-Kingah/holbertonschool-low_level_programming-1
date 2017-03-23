@@ -15,7 +15,7 @@ void _printchar(va_list list)
  * _printstr - print string element from va_list
  * @list: va_list passed to function
  */
-void _printstr(va_list list)
+void _printstring(va_list list)
 {
 	char *s;
 
@@ -57,7 +57,7 @@ void print_all(const char * const format, ...)
 	checkformat fmt[] = {
 		{ "c", _printchar},
 		{ "f", _printfloat},
-		{ "s", _printstr},
+		{ "s", _printstring},
 		{ "i", _printint},
 	};
 
