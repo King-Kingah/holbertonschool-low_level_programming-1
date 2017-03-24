@@ -46,9 +46,9 @@ typedef struct list_s
 ## Project Breakdown
 | Task # | Type | Short description | File name and link |
 | ---: | --- | --- | --- |
-|0 | **Mandatory**  |Write a function that prints all the elements of a `list_t` list.<br>>Prototype: `size_t print_list(const list_t *h);`<br>>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>   | File: [0-print_list.c](./0-print_list.c) |
-|1 | **Mandatory** |    | File: [1-list_len.c](./1-list_len.c) |
-|2 | **Mandatory** |    | File: [2-add_node.c](./2-add_node.c) |
-|3 | **Mandatory** |    | File: [3-add_node_end.c](./3-add_node_end.c) |
-|4 | **Mandatory** |    | [Create a man page for your function.](./man_3_printf)
+|0 | **Mandatory**  |Write a function that prints all the elements of a `list_t` list.<br><br>Prototype: `size_t print_list(const list_t *h);`<br>>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>   | File: [0-print_list.c](./0-print_list.c) |
+|1 | **Mandatory** | Write a function that returns the number of elements in a linked `list_t` list.<br><br>Prototype: `size_t list_len(const list_t *h);`   | File: [1-list_len.c](./1-list_len.c) |
+|2 | **Mandatory** | Write a function that adds a new node at the beginning of a list_t list.<br><br>Prototype: `list_t *add_node(list_t **head, const char *str);`<br>Return: the address of the new element, or NULL if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [2-add_node.c](./2-add_node.c) |
+|3 | **Mandatory** | Write a function that adds a new node at the end of a `list_t` list.<br><br>Prototype: `list_t *add_node_end(list_t **head, const char *str);`<br>Return: the address of the new element, or `NULL` if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [3-add_node_end.c](./3-add_node_end.c) |
+|4 | **Mandatory** | Write a function that free a `list_t` list.<br><br>Prototype: `void free_list(list_t *head);`    | File: [4-free_list.c](./4-free_list.c)|
 |3 | *Advanced* |     |???|
