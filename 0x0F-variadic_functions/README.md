@@ -1,4 +1,4 @@
-#0x0F. C - Variadic functions
+# 0x0F. C - Variadic functions
 ## Description
 At the end of this project we are expected to be able to explain to anyone, without the help of Google:
 - What are variadic functions
@@ -6,7 +6,7 @@ At the end of this project we are expected to be able to explain to anyone, with
 - Why and how to use the const type qualifier
 
 ### Tasks
-####Name: 0. Beauty is variable, ugliness is constant
+#### Name: 0. Beauty is variable, ugliness is constant
 Write a function that returns the sum of all its parameters.
 
 - Prototype: `int sum_them_all(const unsigned int n, ...);`
