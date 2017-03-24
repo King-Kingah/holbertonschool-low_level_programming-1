@@ -8,14 +8,14 @@
 This project explores the concept of singly linked lists in C Programming.
 
 ![image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/229/giphy-3.gif)
-### What you should learn from this project
+### What students should learn from this project
 
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:
 - When and why using linked lists vs arrays
 - How to build and use linked lists
 
 ### Resources
-The following data structure must be incorporated in this project:
+- The following data structure must be incorporated in this project:
 ```C
 /**
  * struct list_s - singly linked list
@@ -33,19 +33,15 @@ typedef struct list_s
     struct list_s *next;
 } list_t;
 ```
-Let's consider two different data structures for storing a list of things:
-an array and a linked list.
-
-An array is a pretty obvious way to store a list, with a big advantage:  it
-enables very fast access of each item.  However, it has two disadvantages.
-
-First, if we want to insert an item at the beginning or middle of an array, we
-have to slide a lot of items over one place to make room.  This takes time
-proportional to the length of the array.
-
-Second, an array has a fixed length that can't be changed.  If we want to add
-items to the list, but the array is full, we have to allocate a whole new array
-and move all the ints from the old array to the new one.
+- [UNSW Lecture on Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&feature=youtu.be&t=2m10s)
+- [Lecture notes](https://people.eecs.berkeley.edu/~jrs/61b/lec/07) from a Berkeley CS course. Excerpt:
+>Let's consider two different data structures for storing a list of things: an array and a linked list.
+>
+>An array is a pretty obvious way to store a list, with a big advantage:  it enables very fast access of each item.  However, it has two disadvantages.
+>
+>First, if we want to insert an item at the beginning or middle of an array, we have to slide a lot of items over one place to make room.  This takes time proportional to the length of the array.
+>
+>Second, an array has a fixed length that can't be changed.  If we want to add items to the list, but the array is full, we have to allocate a whole new array and move all the ints from the old array to the new one.
 
 ## Project Breakdown
 | Task # | Type | Short description |
