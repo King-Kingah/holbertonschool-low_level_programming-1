@@ -14,6 +14,25 @@ At the end of this project you are expected to be able to explain to anyone, wit
 - When and why using linked lists vs arrays
 - How to build and use linked lists
 
+### Resources
+The following data structure must be incorporated in this project:
+```C
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton project
+ */
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+```
 Let's consider two different data structures for storing a list of things:
 an array and a linked list.
 
