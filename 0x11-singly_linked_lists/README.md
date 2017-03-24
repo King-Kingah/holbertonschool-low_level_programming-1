@@ -46,10 +46,9 @@ typedef struct list_s
 ## Project Breakdown
 | Task # | Type | Short description |
 | ---: | --- | --- |
-|0 | **Mandatory**     | Write a function that prints all the elements of a list_t list.<br>Prototype: size_t print_list(const list_t *h);<br>Return: the number of nodes<br>Format: see example<br>You are allowed to use printf|
+|0 | **Mandatory**     | Write a function that prints all the elements of a `list_t` list.<br>Prototype: `size_t print_list(const list_t *h);`<br>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>File: [0-print_list.c](./0-print_list.c) |
 |1 | **Mandatory**     | Handle the following conversion specifiers: `d` `i` |
 |2 | **Mandatory** | [Create a man page for your function.](./man_3_printf)
 |3 | **Mandatory** | [Create a man page for your function.](./man_3_printf)
 |4 | **Mandatory** | [Create a man page for your function.](./man_3_printf)
-
 |3 | *Advanced* | Handle the following custom conversion specifiers: <br>`b` the unsigned int argument is converted to binary |
