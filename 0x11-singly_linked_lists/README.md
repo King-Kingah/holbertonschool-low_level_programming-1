@@ -51,4 +51,5 @@ typedef struct list_s
 |2 | **Mandatory** | Write a function that adds a new node at the beginning of a list_t list.<br><br>Prototype: `list_t *add_node(list_t **head, const char *str);`<br>Return: the address of the new element, or NULL if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [2-add_node.c](./2-add_node.c) |
 |3 | **Mandatory** | Write a function that adds a new node at the end of a `list_t` list.<br><br>Prototype: `list_t *add_node_end(list_t **head, const char *str);`<br>Return: the address of the new element, or `NULL` if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [3-add_node_end.c](./3-add_node_end.c) |
 |4 | **Mandatory** | Write a function that free a `list_t` list.<br><br>Prototype: `void free_list(list_t *head);`    | File: [4-free_list.c](./4-free_list.c)|
-|3 | *Advanced* |     |???|
+|3 | *Advanced* | Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.    |File: [100-first.c](./100-first.c) |
+|4 | *Advanced* | Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line. | File: [101-hello_holberton.asm](./101-hello_holberton.asm) |
