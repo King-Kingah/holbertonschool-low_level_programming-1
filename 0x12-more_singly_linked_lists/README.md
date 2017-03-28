@@ -33,13 +33,11 @@ typedef struct listint_s
 ```
 - [Valgrind](http://valgrind.org/docs/) is used in Tasks  4, 5, 10
 - [Linked List tutorials](http://www.geeksforgeeks.org/data-structures/linked-list/) on Geeks for Geeks
->Let's consider two different data structures for storing a list of things: an array and a linked list.
+- Excerpt from "Linked List" section of [Stephen Kochan's book "Programming in C"](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=kochan+programming+in+c&*) pages 244 - 253
+>This is one of the main motivations for the use of a linked list approach for storing information: Entries of the list do not have to be stored sequentially in memory, as is the case with elements in an array.
 >
->An array is a pretty obvious way to store a list, with a big advantage:  it enables very fast access of each item.  However, it has two disadvantages.
->
->First, if we want to insert an item at the beginning or middle of an array, we have to slide a lot of items over one place to make room.  This takes time proportional to the length of the array.
->
->Second, an array has a fixed length that can't be changed.  If we want to add items to the list, but the array is full, we have to allocate a whole new array and move all the ints from the old array to the new one.
+
+### Project Requirements
 
 ## Project Breakdown
 | Task # | Type | Short description | File name and link |
