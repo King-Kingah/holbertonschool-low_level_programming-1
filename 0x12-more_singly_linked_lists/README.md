@@ -58,12 +58,23 @@ typedef struct listint_s
 ## Project Breakdown
 | Task # | Type | Short description | File name and link |
 | ---: | --- | --- | --- |
-|0 | **Mandatory**  |Write a function that prints all the elements of a `list_t` list.<br><br>Prototype: `size_t print_list(const list_t *h);`<br>>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>   | File: [0-print_list.c](./0-print_list.c) |
-| | | | |
-|1 | **Mandatory**| | |
+|0 | **Mandatory**  |Write a function that prints all the elements of a `listint_t` list.<br><br>Prototype: `size_t print_listint(const listint_t *h);`<br>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf` | File: [0-print_listint.c](./0-print_listint.c)|
+|1 | **Mandatory**|Write a function that returns the number of elements in a linked `listint_t` list.<br><br>Prototype: `size_t listint_len(const listint_t *h);`|File: [1-listint_len.c](./1-listint_len.c)|
+(./2-add_nodeint.c)
+
 |2 | **Mandatory**| | |
+(./3-add_nodeint_end.c)
+
 |3 | **Mandatory**| | |
+(./4-free_listint.c)
+
 |4 | **Mandatory**| | |
+(./5-free_listint2.c)
+(./6-pop_listint.c)
+(./7-get_nodeint.c)
+(./8-sum_listint.c)
+(./9-insert_nodeint.c)
+(./10-delete_nodeint.c)
 |5 | **Mandatory**| | |
 |6 | **Mandatory**| | |
 |7 | **Mandatory**| | |
