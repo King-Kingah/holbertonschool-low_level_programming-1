@@ -5,10 +5,11 @@
 */
 void free_listint(listint_t *head)
 {
+	listint_t *space;
 	if (head != NULL)
 	{
-		free_listint(head->next);
-		free(head->n);
-		free(head);
+		space = head;
+		head = head->next;
+		free(space);
 	}
 }
