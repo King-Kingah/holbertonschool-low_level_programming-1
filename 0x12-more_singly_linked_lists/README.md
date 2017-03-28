@@ -1,13 +1,13 @@
 <img src="https://www.holbertonschool.com/assets/holberton-logo-1cc451260ca3cd297def53f2250a9794810667c7ca7b5fa5879a569a457bf16f.png" alt="Holberton logo">
 
-# 0x11. C - Singly linked lists
+# 0x12. C - More singly linked lists
 
 ### Author: Elaine Yeung
 
 ## Synopsis
 This project explores the concept of singly linked lists in C Programming.
 
-![image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/229/giphy-3.gif)
+![image](https://cloud.githubusercontent.com/assets/23224088/24430152/1a2fde02-13ca-11e7-8a67-f2420de7c4aa.png)
 ### What students should learn from this project
 
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:
