@@ -25,7 +25,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 - All your files will be compiled on Ubuntu 14.04 LTS
 - Your programs and functions will be compiled with `gcc 4.8.4` (`C90`) using the flags `-Wall -Werror -Wextra and -pedantic`
 
-![image](https://cloud.githubusercontent.com/assets/23224088/24430835/7d83286c-13cd-11e7-9083-aadb330906b8.png)(https://twitter.com/egsy/status/833533513936703489)
+[![image](https://cloud.githubusercontent.com/assets/23224088/24430835/7d83286c-13cd-11e7-9083-aadb330906b8.png)](https://twitter.com/egsy/status/833533513936703489)
 - All your files should end with a new line
 - A `README.md` file, at the root of the folder of the project is mandatory
 - Your code should use the `Betty` style. It will be checked using [`betty-style.pl`](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [`betty-doc.pl`](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
@@ -35,7 +35,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 - You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
 - You don't have to push `_putchar.c`, we will use our file. If you do it won't be taken into account
 - In the following examples, the `main.c` files are showed as examples. You can use them to test your functions, but you don't have to push them to your repo (if you do we won't take them into account). We will use our own `main.c` files at compilation. Our `main.c` files might be different from the one showed in the examples
-- The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `lists.h`
+- The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called [`lists.h`](./lists.h)
 - Don't forget to push your header file
 - All your header files should be include guarded
 - Please use this data structure for this project:
@@ -59,8 +59,6 @@ typedef struct listint_s
 | Task # | Type | Short description | File name and link |
 | ---: | --- | --- | --- |
 |0 | **Mandatory**  |Write a function that prints all the elements of a `list_t` list.<br><br>Prototype: `size_t print_list(const list_t *h);`<br>>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>   | File: [0-print_list.c](./0-print_list.c) |
-|1 | **Mandatory** | Write a function that returns the number of elements in a linked `list_t` list.<br><br>Prototype: `size_t list_len(const list_t *h);`   | File: [1-list_len.c](./1-list_len.c) |
-|2 | **Mandatory** | Write a function that adds a new node at the beginning of a list_t list.<br><br>Prototype: `list_t *add_node(list_t **head, const char *str);`<br>Return: the address of the new element, or NULL if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [2-add_node.c](./2-add_node.c) |
 | | | | |
 |0 | **Mandatory**| | |
 |0 | **Mandatory**| | |
