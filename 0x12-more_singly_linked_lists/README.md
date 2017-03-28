@@ -11,30 +11,28 @@ This project explores the concept of singly linked lists in C Programming.
 ### What students should learn from this project
 
 At the end of this project you are expected to be able to explain to anyone, without the help of Google:
-- When and why using linked lists vs arrays
-- How to build and use linked lists
+- How to use linked lists
+- Start to look for the right source of information without too much help
 
 ### Resources
 - The following data structure must be incorporated in this project:
 ```C
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
+ * struct listint_s - singly linked list
+ * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
  * for Holberton project
  */
-typedef struct list_s
+typedef struct listint_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-} list_t;
+    int n;
+    struct listint_s *next;
+} listint_t;
 ```
-- [UNSW Lecture on Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&feature=youtu.be&t=2m10s)
-- [Lecture notes](https://people.eecs.berkeley.edu/~jrs/61b/lec/07) from a Berkeley CS course. Excerpt:
+- [Valgrind](http://valgrind.org/docs/) is used in Tasks  4, 5, 10
+- [Linked List tutorials](http://www.geeksforgeeks.org/data-structures/linked-list/) on Geeks for Geeks
 >Let's consider two different data structures for storing a list of things: an array and a linked list.
 >
 >An array is a pretty obvious way to store a list, with a big advantage:  it enables very fast access of each item.  However, it has two disadvantages.
