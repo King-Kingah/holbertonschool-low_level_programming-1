@@ -60,6 +60,17 @@ typedef struct listint_s
 | ---: | --- | --- | --- |
 |0 | **Mandatory**  |Write a function that prints all the elements of a `list_t` list.<br><br>Prototype: `size_t print_list(const list_t *h);`<br>>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>   | File: [0-print_list.c](./0-print_list.c) |
 | | | | |
-|0 | **Mandatory**| | |
-|0 | **Mandatory**| | |
-|0 | **Mandatory**| | |
+|1 | **Mandatory**| | |
+|2 | **Mandatory**| | |
+|3 | **Mandatory**| | |
+|4 | **Mandatory**| | |
+|5 | **Mandatory**| | |
+|6 | **Mandatory**| | |
+|7 | **Mandatory**| | |
+|8 | **Mandatory**| | |
+|9 | **Mandatory**| | |
+|10 | **Mandatory**| | |
+|11 | ***Advanced***| | |
+|12 | ***Advanced***| | |
+|13 | ***Advanced***| | |
+|14 | ***Advanced***| | |
