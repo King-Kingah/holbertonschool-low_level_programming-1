@@ -15,7 +15,28 @@ At the end of this project you are expected to be able to explain to anyone, wit
 - Start to look for the right source of information without too much help
 
 ### Resources
-- The following data structure must be incorporated in this project:
+- [Valgrind](http://valgrind.org/docs/) is used in Tasks  4, 5, 10
+- [Linked List tutorials](http://www.geeksforgeeks.org/data-structures/linked-list/) on Geeks for Geeks
+- Excerpt from "Linked List" section of [Stephen Kochan's book "Programming in C"](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=kochan+programming+in+c&*) pages 244 - 253
+>This is one of the main motivations for the use of a linked list approach for storing information: Entries of the list do not have to be stored sequentially in memory, as is the case with elements in an array.
+
+### Project Requirements
+- Allowed editors: vi, vim, emacs
+- All your files will be compiled on Ubuntu 14.04 LTS
+- Your programs and functions will be compiled with gcc 4.8.4 (C90) using the flags -Wall -Werror -Wextra and -pedantic
+- All your files should end with a new line
+- A README.md file, at the root of the folder of the project is mandatory
+- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+- You are not allowed to use global variables
+- No more than 5 functions per file
+- The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc... is forbidden
+- You are allowed to use _putchar
+- You don't have to push _putchar.c, we will use our file. If you do it won't be taken into account
+- In the following examples, the main.c files are showed as examples. You can use them to test your functions, but you don't have to push them to your repo (if you do we won't take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one showed in the examples
+- The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called lists.h
+- Don't forget to push your header file
+- All your header files should be include guarded
+- Please use this data structure for this project:
 ```C
 /**
  * struct listint_s - singly linked list
@@ -31,13 +52,6 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 ```
-- [Valgrind](http://valgrind.org/docs/) is used in Tasks  4, 5, 10
-- [Linked List tutorials](http://www.geeksforgeeks.org/data-structures/linked-list/) on Geeks for Geeks
-- Excerpt from "Linked List" section of [Stephen Kochan's book "Programming in C"](https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=kochan+programming+in+c&*) pages 244 - 253
->This is one of the main motivations for the use of a linked list approach for storing information: Entries of the list do not have to be stored sequentially in memory, as is the case with elements in an array.
->
-
-### Project Requirements
 
 ## Project Breakdown
 | Task # | Type | Short description | File name and link |
@@ -45,7 +59,7 @@ typedef struct listint_s
 |0 | **Mandatory**  |Write a function that prints all the elements of a `list_t` list.<br><br>Prototype: `size_t print_list(const list_t *h);`<br>>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf`<br>   | File: [0-print_list.c](./0-print_list.c) |
 |1 | **Mandatory** | Write a function that returns the number of elements in a linked `list_t` list.<br><br>Prototype: `size_t list_len(const list_t *h);`   | File: [1-list_len.c](./1-list_len.c) |
 |2 | **Mandatory** | Write a function that adds a new node at the beginning of a list_t list.<br><br>Prototype: `list_t *add_node(list_t **head, const char *str);`<br>Return: the address of the new element, or NULL if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [2-add_node.c](./2-add_node.c) |
-|3 | **Mandatory** | Write a function that adds a new node at the end of a `list_t` list.<br><br>Prototype: `list_t *add_node_end(list_t **head, const char *str);`<br>Return: the address of the new element, or `NULL` if it failed<br>`str` needs to be duplicated<br>You are allowed to use `strdup`   | File: [3-add_node_end.c](./3-add_node_end.c) |
-|4 | **Mandatory** | Write a function that free a `list_t` list.<br><br>Prototype: `void free_list(list_t *head);`    | File: [4-free_list.c](./4-free_list.c)|
-|3 | *Advanced* | Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.    |File: [100-first.c](./100-first.c) |
-|4 | *Advanced* | Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line. | File: [101-hello_holberton.asm](./101-hello_holberton.asm) |
+| | | | |
+|0 | **Mandatory**| | |
+|0 | **Mandatory**| | |
+|0 | **Mandatory**| | |
