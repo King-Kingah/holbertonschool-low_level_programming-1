@@ -24,13 +24,13 @@ listint_t *reverse_listint(listint_t **head)
 		*head = rest;
 		return (rest);
 	}
-
-	if (rest == NULL)
-		return;
-	reverse_listint(&rest);
-	first->next->next = first;
-
-	first->next = NULL;
-	*head = rest;
+	while (first != NULL)
+	{
+		(*head)->next = rest;
+		rest = *head;
+		*head = first;
+		first = (*head)->next;
+	}
+	(*head)->next = rest;
 	return (*head);
 }
