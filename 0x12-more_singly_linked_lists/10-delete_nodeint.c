@@ -24,13 +24,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 
 	if (index == 0)
-		*head = current->next;
+		*head = current->next; /* change head of list */
 	else if (current->next)
-		new->next = current->next;
+		new->next = current->next; /* unlink node from linked list */
 	else
-		new->next = NULL;
+		new->next = NULL; /* change end of list */
 
-	free(current);
+	free(current); /* free memory of deleted node */
 
 	return (1);
 }
