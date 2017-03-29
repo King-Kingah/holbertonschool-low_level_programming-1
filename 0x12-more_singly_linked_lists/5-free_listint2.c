@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 	listint_t *space;
 
 	if (head == NULL)
-		return;
+		return; /* check if list is empty */
 
 	while (*head != NULL)
 	{
