@@ -60,78 +60,16 @@ typedef struct listint_s
 | ---: | --- | --- | --- |
 |0 | **Mandatory**  |Write a function that prints all the elements of a `listint_t` list.<br><br>Prototype: `size_t print_listint(const listint_t *h);`<br>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf` | File: [0-print_listint.c](./0-print_listint.c)|
 |1 | **Mandatory**|Write a function that returns the number of elements in a linked `listint_t` list.<br><br>Prototype: `size_t listint_len(const listint_t *h);`|File: [1-listint_len.c](./1-listint_len.c)|
-2. Add node mandatory
-
-Write a function that adds a new node at the beginning of a listint_t list.
-
-Prototype: listint_t *add_nodeint(listint_t **head, const int n);
-Return: the address of the new element, or NULL if it failed
-File: [2-add_nodeint.c](./2-add_nodeint.c)
-
-|2 | **Mandatory**| | |
-
-
-Write a function that adds a new node at the end of a listint_t list.
-
-Prototype: listint_t *add_nodeint_end(listint_t **head, const int n);
-Return: the address of the new element, or NULL if it failed
-File: [3-add_nodeint_end.c](./3-add_nodeint_end.c)
-
-|3 | **Mandatory**| | |
-Write a function that free a listint_t list.
-
-Prototype: void free_listint(listint_t *head);
-File: [4-free_listint.c](./4-free_listint.c)
-
-|4 | **Mandatory**| | |
-Write a function that free a listint_t list.
-
-Prototype: void free_listint2(listint_t **head);
-The function sets the head to NULL
-File: [5-free_listint2.c](./5-free_listint2.c)
-
-Write a function that deletes the head node of a listint_t linked list, and returns the head node's data (n).
-
-Prototype: int pop_listint(listint_t **head);
-if the linked list is empty return 0
-File: 6-pop_listint.c
-(./6-pop_listint.c)
-Write a function that returns the nth node of a listint_t linked list.
-
-Prototype: listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
-where index is the index of the node, starting at 0
-if the node does not exist, return NULL
-File: 7-get_nodeint.c
-(./7-get_nodeint.c)
-Write a function that returns the sum of all the data (n) of a listint_t linked list.
-
-Prototype: int sum_listint(listint_t *head);
-if the list is empty, return 0
-File: 8-sum_listint.c
-(./8-sum_listint.c)
-Write a function that inserts a new node at a given position.
-
-Prototype: listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
-where idx is the index of the list where the new node should be added. Index starts at 0
-Returns: the address of the new node, or NULL if it failed
-if it is not possible to add the new node at index idx, do not add the new node and return NULL
-File: 9-insert_nodeint.c
-(./9-insert_nodeint.c)
-Write a function that deletes the node at index index of a listint_t linked list.
-
-Prototype: int delete_nodeint_at_index(listint_t **head, unsigned int index);
-where index is the index of the node that should be deleted. Index starts at 0
-Returns: 1 if it succeeded, -1 if it failed
-File: 10-delete_nodeint.c
-(./10-delete_nodeint.c)
-
-|5 | **Mandatory**| | |
-|6 | **Mandatory**| | |
-|7 | **Mandatory**| | |
-|8 | **Mandatory**| | |
-|9 | **Mandatory**| | |
-|10 | **Mandatory**| | |
-|11 | ***Advanced***| | |
-|12 | ***Advanced***| | |
-|13 | ***Advanced***| | |
-|14 | ***Advanced***| | |
+|2 | **Mandatory**|Write a function that adds a new node at the beginning of a listint_t list.<br><br>Prototype: `listint_t *add_nodeint(listint_t **head, const int n);`<br>Return: the address of the new element, or `NULL` if it failed|File: [2-add_nodeint.c](./2-add_nodeint.c)|
+|3 | **Mandatory**|Write a function that adds a new node at the end of a listint_t list.<br><br>Prototype: `listint_t *add_nodeint_end(listint_t **head, const int n);`<br>Return: the address of the new element, or `NULL` if it failed | File: [3-add_nodeint_end.c](./3-add_nodeint_end.c)|
+|4 | **Mandatory**|Write a function that free a listint_t list.<br><br>Prototype: `void free_listint(listint_t *head);` |File: [4-free_listint.c](./4-free_listint.c)|
+|5 | **Mandatory**|Write a function that free a listint_t list.<br><br>Prototype: `void free_listint2(listint_t **head);`<br>The function sets the head to `NULL` |File: [5-free_listint2.c](./5-free_listint2.c)|
+|6 | **Mandatory**|Write a function that deletes the head node of a listint_t linked list, and returns the head node's data (n).<br><br>Prototype: `int pop_listint(listint_t **head);`<br>if the linked list is empty return 0 |File: [6-pop_listint.c](./6-pop_listint.c) |
+|7 | **Mandatory**|Write a function that returns the nth node of a listint_t linked list.<br><br>Prototype: `listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)`<br>where index is the index of the node, starting at 0<br>if the node does not exist, return NULL |File: [7-get_nodeint.c](./7-get_nodeint.c)|
+|8 | **Mandatory**|Write a function that returns the sum of all the data (n) of a listint_t linked list.<br><br>Prototype: `int sum_listint(listint_t *head);`<br>if the list is empty, return 0|File: [8-sum_listint.c](./8-sum_listint.c)|
+|9 | **Mandatory**|Write a function that inserts a new node at a given position.<br><br>Prototype: `listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);`<br>where idx is the index of the list where the new node should be added. Index starts at 0<br>Returns: the address of the new node, or NULL if it failed<br>if it is not possible to add the new node at index idx, do not add the new node and return NULL |File: [9-insert_nodeint.c](./9-insert_nodeint.c)|
+|10 | **Mandatory**|Write a function that deletes the node at index index of a listint_t linked list.<br><br>Prototype: `int delete_nodeint_at_index(listint_t **head, unsigned int index);`<br>where index is the index of the node that should be deleted. Index starts at 0<br>Returns: 1 if it succeeded, -1 if it failed|File: [10-delete_nodeint.c](./10-delete_nodeint.c)|
+|11 | ***Advanced***| Write a function that reverses a listint_t linked list.<br><br>Prototype: `listint_t *reverse_listint(listint_t **head);`<br>Returns: a pointer to the first node of the reversed list<br>You are not allowed to use more than 1 loop.<br>You are not allowed to use malloc, free or arrays<br>You can only declare a maximum of two variables in your function| File: [100-reverse_listint.c]()|
+|12 | ***Advanced***|Write a function that prints a listint_t linked list.<br><br>Prototype: `size_t print_listint_safe(const listint_t *head);`<br>Returns: the number of nodes in the list<br>This function can print lists with a loop<br>You should go through the list only once<br>If the function fails, exit the program with status 98<br>Output format: see example|File: [101-print_listint_safe.c]()|
+|13 | ***Advanced***|Write a function that free a listint_t list.<br><br>Prototype: `size_t free_listint_safe(listint_t **h);`<br>This function can free lists with a loop<br>You should go though the list only once<br>Returns: the size of the list that was free'd<br>The function sets the head to `NULL`|File: [102-free_listint_safe.c]()|
+|14 | ***Advanced***|Write a function that finds the loop in a linked list.<br><br>Prototype: `listint_t *find_listint_loop(listint_t *head);`<br>Returns: The address of the node where the loop starts, or NULL if there is no loop<br>You are not allowed to use malloc, free or arrays<br>You can only declare a maximum of two variables in your function|File: [103-find_loop.c]() |
