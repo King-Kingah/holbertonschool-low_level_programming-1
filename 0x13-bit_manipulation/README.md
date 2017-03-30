@@ -67,6 +67,11 @@ At the end of this project you are expected to be able to explain to anyone, wit
 ## Project Breakdown
 | Task # | Type | Short description | File name and link |
 | ---: | --- | --- | --- |
-|0 | **Mandatory**  |Write a function that prints all the elements of a `listint_t` list.<br><br>Prototype: `size_t print_listint(const listint_t *h);`<br>Return: the number of nodes<br>Format: see example<br>You are allowed to use `printf` | File: [0-print_listint.c](./0-print_listint.c)|
-|13 | ***Advanced***|Write a function that free a listint_t list.<br><br>Prototype: `size_t free_listint_safe(listint_t **h);`<br>This function can free lists with a loop<br>You should go though the list only once<br>Returns: the size of the list that was free'd<br>The function sets the head to `NULL`|File: [102-free_listint_safe.c]()|
-|14 | ***Advanced***|Write a function that finds the loop in a linked list.<br><br>Prototype: `listint_t *find_listint_loop(listint_t *head);`<br>Returns: The address of the node where the loop starts, or NULL if there is no loop<br>You are not allowed to use malloc, free or arrays<br>You can only declare a maximum of two variables in your function|File: [103-find_loop.c]() |
+|0 | **Mandatory**  | Write a function that converts a binary number to an unsigned int.<br><br>Prototype: `unsigned int binary_to_uint(const char *b);`<br>where `b` is pointing to a string of `0` and `1` chars<br>Return: the converted number, or 0 if<br>there is one or more chars in the string b that is not 0 or 1<br>b is NULL| File: [0-binary_to_uint.c](./0-binary_to_uint.c)|
+|1 | **Mandatory** | | File: [1-print_binary.c](./1-print_binary.c) |
+|2 | **Mandatory** | | File: [2-get_bit.c](./2-get_bit.c) |
+|3 | **Mandatory** | | File: [3-set_bit.c](./3-set_bit.c) |
+|4 | **Mandatory** | | File: [4-clear_bit.c](./4-clear_bit.c) |
+|5 | **Mandatory** | | File: [5-flip_bits.c](./5-flip_bits.c) |
+|6 | ***Advanced***| |File: [100-get_endianness.c](./100-get_endianness.c)|
+|7 | ***Advanced***| |File: [101-password](./101-password)|
