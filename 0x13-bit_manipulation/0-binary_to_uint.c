@@ -28,11 +28,6 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		if (i == 1)
-		{
-			index = _strtou(b[i]);
-			convert = 0 * 2 + index;
-		}
 		index = _strtou(b[i]);
 		convert = convert * 2 + index;
 	}
