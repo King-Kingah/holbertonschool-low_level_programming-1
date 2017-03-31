@@ -33,11 +33,8 @@ unsigned int binary_to_uint(const char *b)
 			index = _strtou(b[i]);
 			convert = 0 * 2 + index;
 		}
-		else
-		{
-			index = _strtou(b[i]);
-			convert = convert * 2 + index;
-		}
+		index = _strtou(b[i]);
+		convert = convert * 2 + index;
 	}
 
 	return (convert);
