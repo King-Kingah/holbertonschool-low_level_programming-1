@@ -45,6 +45,7 @@ At the end of this project you are expected to be able to explain to anyone, wit
 |0|1|
 |1|0|
 
+- WikiHow article for [how to convert from binary to decimal](http://www.wikihow.com/Convert-from-Binary-to-Decimal)
 
 ### Project Requirements
 - Allowed editors: `vi`, `vim`, `emacs`
