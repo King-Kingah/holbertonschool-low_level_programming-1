@@ -9,18 +9,18 @@
  */
 void print_binary(unsigned long int n)
 {
-	int mask;
+	bool index;
 	int i;
 
+//	mask = ((sizeof(n) * 8) - 1);
 	if (n == 0)
 		_putchar('0');
-	for (i = 0, mask = 0; mask > 0; i++)
+	for (i = ((sizeof(n) * 8) - 1); ; n; i--)
 	{
+		mask = mask >> 1;
 		if ((n & mask) == 0)
 			_putchar('0');
 		else
 			_putchar('1');
-		mask = mask >> 1;
 	}
-
 }
