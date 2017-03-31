@@ -7,5 +7,20 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
+	n = n >> index;
 
+	if ( n == 0)
+		return (0);
+
+	else if (index > 63)
+		return (-1);
+
+	else if (n)
+	{
+		n = n % 2;
+		return (n);
+	}
+
+	else
+		return (-1);
 }
