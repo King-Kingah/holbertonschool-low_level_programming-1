@@ -14,43 +14,39 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t error;
 	char *buffer;
 
-        /* check errors edge cases */
+	/* check errors edge cases */
 	buffer = malloc(sizeof(*buffer) * letters);
 	if (filename == NULL)
 		return (0);
 	if (buffer == NULL)
 		return (0);
-
 	/* write */
-        fd = open(filename, O_RDONLY);
+	fd = open(filename, O_RDONLY);
 
-        if(fd == -1)
-        {
+	if (fd == -1)
+	{
 		free(buffer);
 		return (0);
-        }
-
+	}
 	total = read(fd, buffer, letters);
 	if (total == -1)
 	{
 		free(buffer);
 		return (0);
-        }
-	if (total > 0)
-	{
-		error = write(STDOUT_FILENO, buffer, total);
 	}
+	if (total > 0)
+		error = write(STDOUT_FILENO, buffer, total);
 	if (error < total)
 	{
 		free(buffer);
 		return (0);
-        }
+	}
 	error = close(fd);
 	if (error == -1)
 	{
 		free(buffer);
 		return (0);
-        }
+	}
 	free(buffer);
 	return (total);
 }
