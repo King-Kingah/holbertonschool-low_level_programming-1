@@ -20,20 +20,23 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	if (buffer == NULL)
 		return (0);
-	/* write */
+	/* read */
 	fd = open(filename, O_RDONLY);
 
+	/* return 0 if file can't be opened or read */
 	if (fd == -1)
 	{
 		free(buffer);
 		return (0);
 	}
+	/* read */
 	total = read(fd, buffer, letters);
 	if (total == -1)
 	{
 		free(buffer);
 		return (0);
 	}
+	/* write */
 	if (total > 0)
 		error = write(STDOUT_FILENO, buffer, total);
 	if (error < total)
