@@ -11,7 +11,6 @@ void _checker(char *file1, char *file2)
 	if (file2 == NULL)
 		write_err(file2);
 }
-
 /**
  * read_err - check if error on file read
  * @file: pointer to file
@@ -21,13 +20,10 @@ void read_err(char *file)
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
 	exit(98);
 }
-
-
 /**
  * write_err - check if error on file write
  * @file: pointer to file
  */
-
 void write_err(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
@@ -48,15 +44,10 @@ void close_err(int fd)
  * @argv: argument vector
  * Return: 0 success, -1 fail
  */
-
 int main(int argc, char *argv[])
 {
-	int file_i;
-	int file_o;
-	int file_i_read;
-	int file_o_write;
-	int file_i_close;
-	int file_o_close;
+	int file_i, file_o, file_i_read, file_o_write, file_i_close,
+		file_o_close;
 	char *buffer;
 	mode_t mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 
