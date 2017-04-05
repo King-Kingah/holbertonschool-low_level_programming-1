@@ -14,9 +14,8 @@ void _checker(char *file1, char *file2)
 
 /**
  * read_err - check if error on file read
- * @file - pointer to file
+ * @file: pointer to file
  */
-
 void read_err(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
@@ -26,24 +25,22 @@ void read_err(char *file)
 
 /**
  * write_err - check if error on file write
- * @file - pointer to file
+ * @file: pointer to file
  */
 void write_err(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 	exit(99);
 }
-
 /**
  * close_err - check if error on file close
- * @fd - file descriptor
+ * @fd: file descriptor
  */
 void close_err(int fd)
 {
 	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 	exit(100);
 }
-
 /**
  * main - copies the content of a file to another file
  * @argc: argument count
@@ -51,8 +48,7 @@ void close_err(int fd)
  * Return: 0 success, -1 fail
  */
 
-int main(int argc,char *argv[])
-{
+int main(int argc, char *argv[])
 	int file_i;
 	int file_o;
 	int file_i_read;
@@ -67,10 +63,8 @@ int main(int argc,char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	_checker(argv[1], argv[2]);
 	file_i = open(argv[1], O_RDONLY);
-
 	if (file_i == -1)
 		read_err(argv[1]);
 	file_o = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, mode);
