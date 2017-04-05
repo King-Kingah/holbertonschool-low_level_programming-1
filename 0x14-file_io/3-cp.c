@@ -27,6 +27,7 @@ void read_err(char *file)
  * write_err - check if error on file write
  * @file: pointer to file
  */
+
 void write_err(char *file)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
@@ -49,6 +50,7 @@ void close_err(int fd)
  */
 
 int main(int argc, char *argv[])
+{
 	int file_i;
 	int file_o;
 	int file_i_read;
