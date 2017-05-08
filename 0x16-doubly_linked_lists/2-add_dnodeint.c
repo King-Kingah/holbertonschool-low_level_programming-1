@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 	
 	/* put data into new node */
-	n = new->n;
+	new->n = n;
 	
 	/* reassign head to point to new node */
 	(*head) = new;
@@ -28,4 +28,3 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	return (new);
 }
-
