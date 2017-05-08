@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *print_list - print all elements of a dlistint_t list
+ *print_dlistint - print all elements of a dlistint_t list
  *@h: pointer to head of doubly linked list
  *Return: formatted list to stdout
  */
