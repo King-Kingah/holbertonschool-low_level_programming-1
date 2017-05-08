@@ -7,10 +7,8 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *current = NULL;
 	dlistint_t *new = NULL;
 
-	current = *head;
 	/* allocate new node */
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
@@ -24,16 +22,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
        /* assign new->prev to point to NULL */
        new->prev = NULL;
-
-       /* assign head->prev to point to new */
-       /* *head->prev = new;*/
        
 	/* reassign head to point to new node */
 	(*head) = new;
-	
-	/* make next of new node as head */
-	if (current == NULL)
-		new->next = current;
+
+	/* assign head->prev to point to new */
+	/* *head->prev = new;*/
+/*	new->next->prev = *new;*/
 
 	return (new);
 }
