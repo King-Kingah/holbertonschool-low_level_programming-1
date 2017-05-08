@@ -11,7 +11,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int i;
 
 	current = head;
-	/* use counter `i` and compare to index to traverse list */
+	/* traverse through list, stopping one before `index` position */
 	for (i = 0; i < index; i++)
 	{
 		if (current)
@@ -20,7 +20,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 			return (NULL);
 	}
 
-	if (current != NULL)
+	/* check if node exists */
+	if (current)
 		return (current);
 	else
 		return (NULL);
