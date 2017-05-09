@@ -29,7 +29,10 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	/* insert node by having current->next point to new node */
 	if (current)
+	{
 		current->next = new;
+		new->prev = current;
+	}
 	else
 		*head = new;
 	return (new);
