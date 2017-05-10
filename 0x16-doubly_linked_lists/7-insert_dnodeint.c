@@ -21,13 +21,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	for (i = 1; traverse && i < idx; i++) /* traverse to end of list */
 	{
 		traverse = traverse->next;
-		if (traverse == NULL) /*check if possible to add new node*/
-			return (NULL);
+		/* if (traverse == NULL) check if possible to add new node
+			return (NULL); */
 	}
 	new = malloc(sizeof(dlistint_t)); /* allocate size for new node */
 
 	if (new == NULL)
-		free(new);
+		/*free(new);*/
 		return (NULL);
 	new->n = n; /* put data in new node */
 
