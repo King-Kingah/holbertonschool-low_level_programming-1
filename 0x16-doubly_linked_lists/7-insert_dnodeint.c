@@ -11,43 +11,40 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new;
-	dlistint_t *insert_after;
-	unsigned int i;
+	dlistint_t *traverse;
+	unsigned int i = 0;
 
 	if (h == NULL) /*check if list empty*/
 		return (NULL);
 
-	insert_after = *h;
-	/* traverse to end of list */
-	for (i = 1; insert_after && i < idx; i++)
+	traverse = *h;
+	for (i = 1; traverse && i < idx; i++) /* traverse to end of list */
 	{
-		insert_after = insert_after->next;
-		if (insert_after == NULL) /*check if possible to add new node*/
+		traverse = traverse->next;
+		if (traverse == NULL) /*check if possible to add new node*/
 			return (NULL);
 	}
-	/* allocate size for new node */
-	new = malloc(sizeof(dlistint_t));
+	new = malloc(sizeof(dlistint_t)); /* allocate size for new node */
+
 	if (new == NULL)
 		free(new);
 		return (NULL);
-	/* put data in new node */
-	new->n = n;
+	new->n = n; /* put data in new node */
 
 	if (idx == 0)
 	{
 		*h = new;
-		new->next = insert_after;
+		new->next = traverse;
 	}
-	else if (insert_after->next)
+	else if (traverse->next)
 	{
-		new->next = insert_after->next;
-		insert_after->next = new;
+		new->next = traverse->next;
+		traverse->next = new;
 	}
 	else
 	{
 		new->next = NULL;
-		insert_after->next = new;
+		traverse->next = new;
 	}
-
 	return (new);
 }
