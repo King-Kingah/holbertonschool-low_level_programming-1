@@ -42,10 +42,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new;
 		return (*h);
 	}
-	else if (traverse->next)
-	{
-		new->next = traverse->next;
-		traverse->next = new;
+	new->next = traverse->next;
+	traverse->next = new;
 	}
 	else
 	{
