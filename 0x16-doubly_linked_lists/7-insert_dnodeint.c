@@ -19,7 +19,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	traverse = *h;
-	for (i = 1; traverse && i < idx; i++) /* traverse to end of list */
+	for (i = 1; traverse && i < idx - 1; i++) /* traverse to end of list */
 	{
 		traverse = traverse->next;
 	}
