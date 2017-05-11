@@ -12,14 +12,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new;
 	dlistint_t *traverse;
-	unsigned int i = 0;
+	unsigned int i;
 	size_t list_length = dlistint_len(*h);
 
 	if (h == NULL) /*check if list empty*/
 		return (NULL);
 
 	traverse = *h;
-	for (i = 1; traverse && i < idx - 1; i++) /* traverse to end of list */
+	for (i = 0; traverse && i < idx - 1; i++) /* traverse to end of list */
 	{
 		traverse = traverse->next;
 	}
