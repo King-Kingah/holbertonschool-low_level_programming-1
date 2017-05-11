@@ -15,18 +15,18 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int i;
 	size_t list_length = dlistint_len(*h);
 
+	traverse = *h;
 	if (h == NULL) /*check if list empty*/
 		return (NULL);
-
-	traverse = *h;
+	new = malloc(sizeof(dlistint_t)); /* allocate size for new node */
+	if (new == NULL)
+		return (NULL);
 	for (i = 0; traverse && i < idx - 1; i++) /* traverse to end of list */
 	{
 		traverse = traverse->next;
 	}
-	new = malloc(sizeof(dlistint_t)); /* allocate size for new node */
-	if (new == NULL)
-		return (NULL);
 	new->n = n; /* put data in new node */
+	new->next = new->prev = NULL;
 	if (list_length < idx)
 	{
 		free(new);
