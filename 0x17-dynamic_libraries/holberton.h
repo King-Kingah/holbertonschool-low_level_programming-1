@@ -1,6 +1,10 @@
+#include <unistd.h>
 #ifndef HOLBERTON
 #define HOLBERTON
+<<<<<<< HEAD
 #include <unistd.h>
+=======
+>>>>>>> be5c90b65e1d7d9eca282cf66b6f630b55cd4617
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
