@@ -7,7 +7,7 @@
  * Description: You should print the key/value in the order that they appear
  * in the array of hash table
  * Order: array, list
- * 	Format: see example
+ *	Format: see example
  */
 
 void hash_table_print(const hash_table_t *ht)
@@ -19,9 +19,11 @@ void hash_table_print(const hash_table_t *ht)
 	/* if table null, exit */
 	if (ht == NULL)
 		return;
-		
-	/* for loop - use two counters to iterate through
-	   hash table - one to go across, the other down */
+
+	/**
+	 * for loop - use two counters to iterate through
+	 * hash table - one to go across, the other down
+	 */
 
 	for (i = 0; i <= ht->size; i++)
 	{
