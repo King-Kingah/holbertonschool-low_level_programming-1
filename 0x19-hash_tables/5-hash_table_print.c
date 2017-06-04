@@ -13,7 +13,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *traverse;
-	int i;
+	unsigned long i;
 	int j;
 
 	/* if table null, exit */
@@ -33,9 +33,9 @@ void hash_table_print(const hash_table_t *ht)
 			{
 				/* traverse through linked list of index */
 				if (j == 0)
-					putchar(" ");
+					printf(" ");
 				/* at each node of linked list, print key/values to stdout */
-				printf("%s': '%s'", traverse->key, temp->value);
+				printf("%s': '%s'", traverse->key, traverse->value);
 			}
 		}
 	}
