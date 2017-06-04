@@ -12,13 +12,32 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	/* if table null, exit */
+	hash_node_t *traverse;
+	int i;
+	int j;
 
+	/* if table null, exit */
+	if (ht == NULL)
+		return;
+		
 	/* for loop - use two counters to iterate through
 	   hash table - one to go across, the other down */
 
-	/* if array at index exits then enter another for loop */
+	for (i = 0; i <= ht->size; i++)
+	{
+		if (ht->array[i])
+		{
+			traverse = ht->array[i];
+			/* if array at index exits then enter another for loop */
+			for (j = 0; traverse != NULL; traverse = traverse->next, j++)
+			{
+				/* traverse through linked list of index */
+				if (j == 0)
+					putchar(" ");
+				/* at each node of linked list, print key/values to stdout */
+				printf("%s': '%s'", traverse->key, temp->value);
+			}
+		}
+	}
 
-	/* traverse through linked list of index */
-	/* at each node of linked list, print key/values to stdout */
 }
